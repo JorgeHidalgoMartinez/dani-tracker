@@ -1,7 +1,7 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
   "as_of": "2026-11-07",
-  "checked_at": "2026-11-15T15:16:07+00:00",
+  "checked_at": "2026-11-15T17:11:55+00:00",
   "data_through_jornada": 9,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
@@ -87,9 +87,21 @@
       "gc": 16
     },
     {
+      "id": "1031208",
+      "name": "S.A.D. A.D.C. PARQUE SURESTE 'B'",
+      "pos": 7,
+      "pts": 17,
+      "pj": 10,
+      "pg": 5,
+      "pe": 2,
+      "pp": 3,
+      "gf": 37,
+      "gc": 17
+    },
+    {
       "id": "6792823",
       "name": "RIVAS FUTBOL CLUB 'C'",
-      "pos": 7,
+      "pos": 8,
       "pts": 17,
       "pj": 10,
       "pg": 5,
@@ -101,7 +113,7 @@
     {
       "id": "24016264",
       "name": "ESCUELA DE FUTBOL ARGANDA 'C'",
-      "pos": 8,
+      "pos": 9,
       "pts": 17,
       "pj": 10,
       "pg": 5,
@@ -113,7 +125,7 @@
     {
       "id": "300188",
       "name": "CLUB UNION DEPORTIVA LOECHES 'A'",
-      "pos": 9,
+      "pos": 10,
       "pts": 15,
       "pj": 10,
       "pg": 5,
@@ -121,18 +133,6 @@
       "pp": 5,
       "gf": 41,
       "gc": 37
-    },
-    {
-      "id": "1031208",
-      "name": "S.A.D. A.D.C. PARQUE SURESTE 'B'",
-      "pos": 10,
-      "pts": 14,
-      "pj": 9,
-      "pg": 4,
-      "pe": 2,
-      "pp": 3,
-      "gf": 30,
-      "gc": 17
     },
     {
       "id": "15269398",
@@ -211,12 +211,12 @@
       "name": "ADEPO PALOMERAS 'B'",
       "pos": 17,
       "pts": 2,
-      "pj": 9,
+      "pj": 10,
       "pg": 0,
       "pe": 2,
-      "pp": 7,
+      "pp": 8,
       "gf": 14,
-      "gc": 43
+      "gc": 50
     },
     {
       "id": "13571010",
