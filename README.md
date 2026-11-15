@@ -16,9 +16,9 @@ El contenido de esta carpeta va en la raíz de `main`. Configurar GitHub Pages c
 
 El workflow `.github/workflows/actualizar-rffm.yml` programa consultas a las **06:23 y 18:23 UTC**. En Madrid, actualmente 07:23 y 19:23; en horario de verano 08:23 y 20:23. GitHub puede retrasar las ejecuciones y desactivar cron en repositorios públicos sin actividad durante 60 días.
 
-El workflow incluye pruebas Python, verificación sintáctica JavaScript y pruebas de interfaz en 1440×1000 y 390×844. Tras guardar una copia pública solicita expresamente una reconstrucción de Pages: los commits con GITHUB_TOKEN por sí solos no generan esa reconstrucción. Revisar que el paso de reconstrucción y el despliegue de Pages terminan correctamente.
+El workflow incluye pruebas Python, verificación sintáctica JavaScript y pruebas de interfaz en 1440×1000 y 390×844. Tras guardar una copia pública solicita expresamente una reconstrucción de Pages y comprueba que la web pública sirve exactamente el JSON recién guardado, repitiendo después las pruebas del navegador sobre la URL real: los commits con GITHUB_TOKEN por sí solos no generan esa reconstrucción. Revisar que el paso de reconstrucción y el despliegue de Pages terminan correctamente.
 
-**Estado de publicación:** pendiente de autenticación y verificación en GitHub. La existencia del workflow no demuestra que esté habilitado o ejecutado.
+**Publicación:** activa en https://jorgehidalgomartinez.github.io/dani-tracker/ desde `main`, carpeta raíz. El estado de cada sincronización y de Pages se consulta en la pestaña Actions.
 
 ## Consulta responsable de RFFM
 
