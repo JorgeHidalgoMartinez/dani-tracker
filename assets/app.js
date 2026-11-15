@@ -140,7 +140,7 @@ function renderLeague() {
   $('standings').innerHTML = [...SNAP.teams].sort((a,b)=>a.pos-b.pos).map(t=>{
     return `<tr class="${norm(t.name)===RIVAS?'highlight':''}"><td>${t.pos}</td><td style="text-align:left">${safe(t.name)}</td><td><b>${t.pts}</b></td><td>${t.pj}</td><td>${t.pg}</td><td>${t.pe}</td><td>${t.pp}</td><td>${t.gf}</td><td>${t.gc}</td><td>${t.gf-t.gc>0?'+':''}${t.gf-t.gc}</td></tr>`;
   }).join('');
-  $('tableCut').textContent = `Fotografía consultada: ${SNAP.checked_at ? new Date(SNAP.checked_at).toLocaleString('es-ES') : 'sin comprobación automática'} · ${ownTeam().pj} partidos disputados por Rivas.`;
+  $('tableCut').textContent = `Fotografía consultada: ${SNAP.checked_at ? new Date(SNAP.checked_at).toLocaleString('es-ES',{timeZone:'Europe/Madrid'}) : 'sin comprobación automática'} · ${ownTeam().pj} partidos disputados por Rivas.`;
   $('fixtureCut').textContent = `${SNAP.fixtures.filter(f=>f.gf!=null).length} partidos del Rivas con resultado · ${SNAP.fixtures.filter(isUnknownPast).length} fechas pasadas sin marcador confirmado.`;
 }
 function headToHead(rival) {
@@ -173,7 +173,7 @@ function renderRival() {
 }
 function dataStatus() {
   const remote=sourceMode==='federacion';
-  const last=SNAP.checked_at ? `Última consulta correcta: ${new Date(SNAP.checked_at).toLocaleString('es-ES')}.` : `Fotografía histórica del ${longDate(SNAP.as_of)}.`;
+  const last=SNAP.checked_at ? `Última consulta correcta (Madrid): ${new Date(SNAP.checked_at).toLocaleString('es-ES',{timeZone:'Europe/Madrid'})}.` : `Fotografía histórica del ${longDate(SNAP.as_of)}.`;
   const j=SNAP.data_through_jornada || Math.max(...SNAP.fixtures.filter(f=>f.gf!=null).map(f=>f.j),0);
   const pending=SNAP.fixtures.filter(isUnknownPast).length;
   $('dataBanner').innerHTML=`<div class="statusbar"><span class="tag ${remote?'win':'draw'}">${remote?'Fuente federativa procesada':'Fotografía guardada · no actualizada en vivo'}</span><b>${last}</b><span class="small">J${j} con resultado · ${pending} partidos con fecha pasada sin marcador en la copia.</span><button class="button secondary" id="reloadData">Revisar datos</button></div>`;
