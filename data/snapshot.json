@@ -1,7 +1,7 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
   "as_of": "2026-11-07",
-  "checked_at": "2026-11-15T17:11:55+00:00",
+  "checked_at": "2026-11-15T22:56:52+00:00",
   "data_through_jornada": 9,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
@@ -18,18 +18,30 @@
       "id": "4920197",
       "name": "A.D. ARGANDA C.F.",
       "pos": 1,
-      "pts": 27,
-      "pj": 9,
-      "pg": 9,
+      "pts": 30,
+      "pj": 10,
+      "pg": 10,
       "pe": 0,
       "pp": 0,
-      "gf": 53,
+      "gf": 55,
       "gc": 8
+    },
+    {
+      "id": "2524",
+      "name": "A.D. LA MECA DE RIVAS 'A'",
+      "pos": 2,
+      "pts": 24,
+      "pj": 10,
+      "pg": 8,
+      "pe": 0,
+      "pp": 2,
+      "gf": 38,
+      "gc": 20
     },
     {
       "id": "348221",
       "name": "ESC. MPAL. DE FUT. AGUILAS DE MORATALAZ 'A'",
-      "pos": 2,
+      "pos": 3,
       "pts": 22,
       "pj": 10,
       "pg": 7,
@@ -41,7 +53,7 @@
     {
       "id": "1176",
       "name": "PERISO CLUB DE FUTBOL 'C'",
-      "pos": 3,
+      "pos": 4,
       "pts": 21,
       "pj": 10,
       "pg": 6,
@@ -51,28 +63,16 @@
       "gc": 10
     },
     {
-      "id": "2524",
-      "name": "A.D. LA MECA DE RIVAS 'A'",
-      "pos": 4,
-      "pts": 21,
-      "pj": 9,
-      "pg": 7,
-      "pe": 0,
-      "pp": 2,
-      "gf": 34,
-      "gc": 20
-    },
-    {
       "id": "17202265",
       "name": "U.D. VELILLA",
       "pos": 5,
       "pts": 20,
-      "pj": 9,
+      "pj": 10,
       "pg": 6,
       "pe": 2,
-      "pp": 1,
+      "pp": 2,
       "gf": 42,
-      "gc": 14
+      "gc": 16
     },
     {
       "id": "304321",
@@ -163,12 +163,12 @@
       "name": "C.D. UNION VALDEBERNARDO 'C'",
       "pos": 13,
       "pts": 11,
-      "pj": 9,
+      "pj": 10,
       "pg": 3,
       "pe": 2,
-      "pp": 4,
+      "pp": 5,
       "gf": 24,
-      "gc": 29
+      "gc": 33
     },
     {
       "id": "12234905",
