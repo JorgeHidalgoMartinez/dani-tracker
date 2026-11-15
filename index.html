@@ -6,25 +6,37 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Dani Tracker · Rivas FC C</title>
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=20261115-layout1">
 </head>
 <body>
 <header>
  <div class="topbar"><div class="identity"><div class="crest">DF</div><div><b>DANI <span style="color:var(--lime)">TRACKER</span></b><div class="sub">Rivas FC C · Primera Juvenil · Grupo 9</div></div></div><span class="pill">2026 / 27</span></div>
  <nav class="nav" aria-label="Secciones">
-  <button type="button" class="active" data-tab="inicio">Resumen</button>
+  <button type="button" class="active" data-tab="inicio">Clasificación y jornadas</button>
+  <button type="button" data-tab="analisis">Resumen</button>
   <button type="button" data-tab="calendario">Calendario</button>
   <button type="button" data-tab="rival">Rivales</button>
   <button type="button" data-tab="predicciones">Predicciones</button>
-  <button type="button" data-tab="liga">Clasificación</button>
   <button type="button" data-tab="dani">Dani · privado</button>
   <button type="button" data-tab="fuentes">Fuentes</button>
  </nav>
 </header>
 <main class="shell">
- <div class="lead"><div class="eyebrow">LIGA JUVENIL · INTELIGENCIA DEPORTIVA</div><h1>El Rivas C, con datos.</h1><div class="muted">Calendario, evolución del Rivas C, análisis del rival y seguimiento privado de cada convocatoria.</div></div>
- <div class="banner" id="dataBanner" role="status">Cargando la fotografía federativa disponible…</div>
  <section class="section active" id="inicio">
+  <article class="card league-card" aria-labelledby="leagueHeading">
+   <div class="league-heading"><h1 id="leagueHeading">Clasificación</h1><span class="small muted">Primera Juvenil · Grupo 9</span></div>
+   <div id="ownSummary" class="own-summary" aria-label="Resumen del Rivas Fútbol Club C"></div>
+   <div class="tablewrap"><table class="league-table"><caption class="sr-only">Clasificación oficial del grupo. Rivas Fútbol Club C destacado.</caption><colgroup><col class="col-position"><col class="col-team"><col class="col-points"><col span="6"></colgroup><thead><tr><th scope="col">#</th><th scope="col" class="team-cell">Equipo</th><th scope="col">Pts</th><th scope="col"><abbr title="Partidos jugados">PJ</abbr></th><th scope="col"><abbr title="Ganados">G</abbr></th><th scope="col"><abbr title="Empatados">E</abbr></th><th scope="col"><abbr title="Perdidos">P</abbr></th><th scope="col"><abbr title="Goles a favor">GF</abbr></th><th scope="col"><abbr title="Goles en contra">GC</abbr></th></tr></thead><tbody id="standings"></tbody></table></div>
+   <p class="small muted league-date" id="tableCut">Cargando clasificación…</p>
+  </article>
+  <article class="card round-card" aria-labelledby="roundHeading">
+   <div class="round-heading"><h2 id="roundHeading">Jornadas</h2><span class="small muted" id="roundStatus" aria-live="polite"></span></div>
+   <div class="round-controls"><button type="button" class="button round-arrow" id="previousRound" aria-label="Jornada anterior">‹</button><div class="round-select"><label for="roundSelect" class="sr-only">Seleccionar jornada</label><select id="roundSelect"></select></div><button type="button" class="button round-arrow" id="nextRound" aria-label="Jornada siguiente">›</button></div>
+   <div id="roundMatches" class="round-matches" aria-live="polite"></div>
+  </article>
+ </section>
+
+ <section class="section" id="analisis">
   <div class="cards">
    <article class="card"><div class="kicker">Posición</div><div class="metric" id="mPos">—</div><div class="tiny muted" id="mPosNote">Grupo 9</div></article>
    <article class="card"><div class="kicker">Puntos</div><div class="metric" id="mPts">—</div><div class="tiny muted" id="mRecord">—</div></article>
@@ -52,7 +64,6 @@
     <div class="field"><label for="locationSelect">¿Dónde juega el Rivas?</label><select id="locationSelect"><option value="home">En casa</option><option value="away">Fuera</option></select></div>
     <div id="rivalForecast"></div><p class="statsnote">Los porcentajes no son certezas ni recomendaciones de apuesta.</p></article>
  </section>
- <section class="section" id="liga"><article class="card"><h2>Clasificación · Primera Juvenil, Grupo 9</h2><p class="small muted" id="tableCut">Datos federativos de la última sincronización disponible.</p><div class="tablewrap"><table><thead><tr><th>#</th><th style="text-align:left">Equipo</th><th>Pts</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th></tr></thead><tbody id="standings"></tbody></table></div></article></section>
  <section class="section" id="dani">
   <div class="banner warning"><b>Seguimiento privado en este dispositivo.</b> Estas anotaciones permanecen en el almacenamiento local de este navegador. No se sincronizan entre móviles ni son seguras frente a alguien que pueda acceder al mismo perfil del navegador. No hay autenticación ni cifrado. Otras aplicaciones bajo el mismo dominio jorgehidalgomartinez.github.io comparten este almacenamiento. Puede borrarse al limpiar el navegador y no se copia entre dispositivos. Guarda las copias JSON/CSV fuera del repositorio público.</div>
   <div class="cards">
@@ -81,7 +92,8 @@
   <div class="layout"><article class="card"><h2>Estado y procedencia</h2><div id="sourceStatus"></div><div class="space"></div><h3>Enlaces</h3><div id="sourceList"></div></article>
   <article class="card"><h2>Cómo funcionan las actualizaciones</h2><div class="analysis small"><p><b>Origen:</b> calendario y clasificación agregada de la RFFM, cuando la fuente permite su consulta.</p><p><b>Actualización:</b> un proceso de GitHub Actions está preparado para comprobar datos dos veces al día (06:23 y 18:23 UTC). Consulta el resultado de la última ejecución en el repositorio. Comprueba el robots.txt, la estructura de 18 equipos y 34 jornadas y no borra resultados confirmados.</p><p><b>Fallo:</b> si los datos son inválidos o la web impide la descarga, se conserva la última fotografía. Se muestra su fecha, nunca se presenta como directa o en vivo.</p><p><b>Privacidad:</b> no se recolectan ni publican alineaciones, convocatorias ni perfiles de jugadores menores de edad.</p></div><div class="help">Esto es una aplicación independiente, no vinculada oficialmente a la RFFM. No ofrece probabilidades contrastadas científicamente.</div></article></div>
  </section>
+ <div class="banner data-footer" id="dataBanner" role="status">Cargando datos federativos…</div>
  <footer class="foot">Dani Tracker · Proyecto familiar · Temporada 2026/27 · Sin afiliación a la RFFM</footer>
 </main>
-<script src="assets/fallback_snapshot.js"></script><script src="assets/app.js?v=20261115-2" defer></script>
+<script src="assets/fallback_snapshot.js"></script><script src="assets/app.js?v=20261115-layout1" defer></script>
 </body></html>
