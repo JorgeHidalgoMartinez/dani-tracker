@@ -1,0 +1,61 @@
+name: Actualizar datos RFFM
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 6,18 * * *'
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: dani-rffm-sync
+  cancel-in-progress: false
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Pruebas de integridad
+        run: |
+          python -m unittest discover -s tests -v
+          node --check assets/app.js
+      - name: Instalar navegador de pruebas
+        run: |
+          pip install playwright==1.62.0
+          python -m playwright install --with-deps chromium
+      - name: Descargar y validar fuente federativa
+        id: sync
+        continue-on-error: true
+        run: python scripts/sync_rffm.py
+      - name: Verificar interfaz ordenador y móvil
+        run: python tests/browser_smoke.py
+      - name: Publicar datos o estado del intento
+        id: publish
+        run: |
+          git config user.name 'Dani Tracker CI'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/snapshot.json data/sync_status.json assets/fallback_snapshot.js
+          if ! git diff --cached --quiet; then
+            git commit -m 'Actualizar datos públicos y estado de sincronización RFFM'
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      # GITHUB_TOKEN pushes do not automatically rebuild branch-based Pages.
+      - name: Solicitar reconstrucción Pages desde main raíz
+        if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+      - name: Señalar fallo de fuente sin destruir datos anteriores
+        if: steps.sync.outcome == 'failure'
+        run: |
+          echo '::error::RFFM no se pudo actualizar. Se conserva la última copia correcta; revisar el paso de sincronización.'
+          exit 1
