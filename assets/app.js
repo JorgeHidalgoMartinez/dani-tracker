@@ -21,6 +21,7 @@ const sourceSafe = value => {
 let SNAP = window.DANI_BUNDLED_SNAPSHOT || null;
 let sourceMode = 'incluido';
 let records = {};
+let selectedRound = null;
 try { const fromStore = JSON.parse(localStorage.getItem(STORE) || '{}'); if (fromStore && typeof fromStore === 'object' && !Array.isArray(fromStore)) records = fromStore; } catch {}
 
 function isValidSnapshot(s) {
@@ -137,11 +138,41 @@ function renderFixtures() {
   }).join('') || '<div class="empty">Sin partidos con ese filtro.</div>';
 }
 function renderLeague() {
+  const own=ownTeam();
+  $('ownSummary').innerHTML=`<div class="own-team"><b>Rivas Fútbol Club C</b><span>${own.pos}º · ${own.pts} puntos</span></div><dl class="own-stats">${[['PJ',own.pj,'Partidos jugados'],['G',own.pg,'Ganados'],['E',own.pe,'Empatados'],['P',own.pp,'Perdidos'],['GF',own.gf,'Goles a favor'],['GC',own.gc,'Goles en contra']].map(([label,value,title])=>`<div><dt title="${title}">${label}</dt><dd>${value}</dd></div>`).join('')}</dl>`;
   $('standings').innerHTML = [...SNAP.teams].sort((a,b)=>a.pos-b.pos).map(t=>{
-    return `<tr class="${norm(t.name)===RIVAS?'highlight':''}"><td>${t.pos}</td><td style="text-align:left">${safe(t.name)}</td><td><b>${t.pts}</b></td><td>${t.pj}</td><td>${t.pg}</td><td>${t.pe}</td><td>${t.pp}</td><td>${t.gf}</td><td>${t.gc}</td><td>${t.gf-t.gc>0?'+':''}${t.gf-t.gc}</td></tr>`;
+    const mine=norm(t.name)===RIVAS;
+    return `<tr class="${mine?'highlight':''}"${mine?' aria-current="true"':''}><td>${t.pos}</td><td class="team-cell">${safe(t.name)}</td><td><b>${t.pts}</b></td><td>${t.pj}</td><td>${t.pg}</td><td>${t.pe}</td><td>${t.pp}</td><td>${t.gf}</td><td>${t.gc}</td></tr>`;
   }).join('');
   $('tableCut').textContent = `Fotografía consultada: ${SNAP.checked_at ? new Date(SNAP.checked_at).toLocaleString('es-ES',{timeZone:'Europe/Madrid'}) : 'sin comprobación automática'} · ${ownTeam().pj} partidos disputados por Rivas.`;
   $('fixtureCut').textContent = `${SNAP.fixtures.filter(f=>f.gf!=null).length} partidos del Rivas con resultado · ${SNAP.fixtures.filter(isUnknownPast).length} fechas pasadas sin marcador confirmado.`;
+}
+function renderRound() {
+  const next=upcomingFixture();
+  if (selectedRound==null) selectedRound=next?.j || SNAP.fixtures[SNAP.fixtures.length-1]?.j || 1;
+  selectedRound=Math.max(1,Math.min(34,Number(selectedRound)));
+  $('roundSelect').innerHTML=Array.from({length:34},(_,i)=>`<option value="${i+1}">Jornada ${i+1}${i+1===next?.j?' · Próxima':''}</option>`).join('');
+  $('roundSelect').value=String(selectedRound);
+  $('previousRound').disabled=selectedRound===1;
+  $('nextRound').disabled=selectedRound===34;
+  let matches=(SNAP.league_matches||[]).filter(m=>Number(m.j)===selectedRound);
+  const fullGroup=matches.length>0;
+  if (!fullGroup) {
+    matches=SNAP.fixtures.filter(f=>Number(f.j)===selectedRound).map(f=>({
+      j:f.j,date:f.date,time:f.time,venue:f.venue,
+      home:f.home?'Rivas Fútbol Club C':f.rival,away:f.home?f.rival:'Rivas Fútbol Club C',
+      hg:f.home?f.gf:f.gc,ag:f.home?f.gc:f.gf
+    }));
+  }
+  matches=[...matches].sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999')||(a.time||'99').localeCompare(b.time||'99')||a.home.localeCompare(b.home));
+  const finished=matches.filter(m=>m.hg!=null&&m.ag!=null).length;
+  $('roundStatus').textContent=fullGroup?`${matches.length} partidos · ${finished} con resultado`:'Solo disponible el partido del Rivas en esta copia';
+  $('roundMatches').innerHTML=matches.map(m=>{
+    const done=m.hg!=null&&m.ag!=null;
+    const mine=[m.home,m.away].some(name=>norm(name)===RIVAS);
+    const pending=m.date&&m.date<today()?'Resultado pendiente':'Por jugar';
+    return `<article class="round-match${mine?' rivas-match':''}" data-jornada="${selectedRound}"><div class="match-meta">${longDate(m.date)}${labelTime(m)}${mine?' · Rivas C':''}</div><div class="match-line"><span class="match-home">${safe(m.home)}</span><b class="match-score">${done?`${m.hg} – ${m.ag}`:'–'}</b><span class="match-away">${safe(m.away)}</span></div><div class="match-foot">${done?'Resultado registrado':pending}${m.venue?' · '+safe(m.venue):''}</div></article>`;
+  }).join('')||'<div class="empty">No hay partidos disponibles para esta jornada.</div>';
 }
 function headToHead(rival) {
   const own=ownTeam();
@@ -200,7 +231,7 @@ function populateOptions(){
   else { const f=upcoming||SNAP.fixtures[0];if(f)$('inputJ').value=String(f.j); }
 }
 function renderAll() {
-  dataStatus();populateOptions();renderTop();renderLeague();renderFixtures();renderRival();updatePersonal();loadRecord();
+  dataStatus();populateOptions();renderTop();renderLeague();renderRound();renderFixtures();renderRival();updatePersonal();loadRecord();
 }
 async function refreshData() {
   const btn=$('reloadData');if(btn){btn.disabled=true;btn.textContent='Comprobando…';}
@@ -312,6 +343,9 @@ async function importJSON(file){
   finally{$('importJSON').value='';}
 }
 function attachEvents(){
+  $('roundSelect').addEventListener('change',()=>{selectedRound=Number($('roundSelect').value);renderRound();});
+  $('previousRound').addEventListener('click',()=>{selectedRound=Math.max(1,selectedRound-1);renderRound();});
+  $('nextRound').addEventListener('click',()=>{selectedRound=Math.min(34,selectedRound+1);renderRound();});
   document.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>showTab(btn.dataset.tab)));
   document.querySelectorAll('[data-goto]').forEach(btn=>btn.addEventListener('click',()=>showTab(btn.dataset.goto)));
   $('fixtureFilter').addEventListener('change',renderFixtures);
