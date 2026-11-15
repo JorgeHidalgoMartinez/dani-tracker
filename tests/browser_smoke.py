@@ -6,7 +6,7 @@ import shutil
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from functools import partial
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, expect
 
 ROOT = Path(__file__).resolve().parents[1]
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -69,13 +69,13 @@ def check(base_url=None):
             assert page.locator('#manualCount').inner_text()=='0'
             page.once('dialog',lambda dialog:dialog.accept())
             page.locator('#importJSON').set_input_files({'name':'synthetic.json','mimeType':'application/json','buffer':json.dumps(backup).encode()})
-            page.wait_for_function("document.querySelector('#manualCount').textContent==='1'")
+            expect(page.locator('#manualCount')).to_have_text('1')
             page.locator('#inputJ').select_option('1');page.locator('#inputStatus').select_option('no')
             page.locator('#inputMinutes').fill('5');page.locator('#saveRecord').click()
             assert 'incoherentes' in page.locator('#saveInfo').inner_text()
             page.route('**/data/snapshot.json*',lambda route:route.fulfill(status=503,body='unavailable'))
             page.locator('#reloadData').click()
-            page.wait_for_function("document.querySelector('#dataBanner').textContent.includes('No se ha podido')")
+            expect(page.locator('#dataBanner')).to_contain_text('No se ha podido')
             assert page.locator('#standings tr').count()==18
             assert all(r.method=='GET' for r in requests),'Private data transmitted'
             assert not errors,errors
