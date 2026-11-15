@@ -31,7 +31,30 @@ def check(base_url=None):
             assert page.locator('#mPos').inner_text() != '—'
             assert page.locator('#fixtureRows .statline').count()==34
             assert page.locator('#standings tr').count()==18
-            for tab in ['calendario','rival','predicciones','liga','dani','fuentes','inicio']:
+            assert page.locator('#inicio > article').count()==2
+            assert page.locator('#inicio > article').first.get_attribute('class').find('league-card')>=0
+            assert page.locator('#standings tr.highlight').count()==1
+            assert 'RIVAS' in page.locator('#standings tr.highlight').inner_text().upper()
+            assert page.locator('#ownSummary dt').all_inner_texts()==['PJ','G','E','P','GF','GC']
+            assert page.locator('#roundSelect option').count()==34
+            initial=int(page.locator('#roundSelect').input_value())
+            assert page.locator('#roundSelect option:checked').inner_text().endswith('Próxima')
+            assert page.locator('#roundMatches .round-match').count()==9
+            if initial>1:
+                page.locator('#previousRound').click()
+                assert page.locator('#roundSelect').input_value()==str(initial-1)
+                assert page.locator(f'#roundMatches [data-jornada="{initial-1}"]').count()==9
+                page.locator('#nextRound').click()
+                assert page.locator('#roundSelect').input_value()==str(initial)
+            page.locator('#roundSelect').select_option('1')
+            assert page.locator('#previousRound').is_disabled()
+            assert page.locator('#roundMatches .round-match').count()==9
+            assert page.locator('#roundMatches .rivas-match .match-score').inner_text()=='1 – 0'
+            page.locator('#roundSelect').select_option('34')
+            assert page.locator('#nextRound').is_disabled()
+            assert page.locator('#roundMatches .round-match').count()==9
+            page.locator('#roundSelect').select_option(str(initial))
+            for tab in ['analisis','calendario','rival','predicciones','dani','fuentes','inicio']:
                 page.locator(f'[data-tab="{tab}"]').click()
                 assert page.locator(f'#{tab}').is_visible()
                 assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth'),f'Overflow {width} {tab}'
