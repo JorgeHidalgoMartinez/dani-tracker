@@ -1,0 +1,550 @@
+{
+  "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
+  "as_of": "2026-11-07",
+  "generated_on": "2026-11-15",
+  "status": "Fotografía contrastada hasta la J9; J10 sin marcador confirmado. Sin conexión en vivo hasta desplegar el proyecto.",
+  "official": {
+    "season_id": 22,
+    "game_type_id": 1,
+    "competition_id": 26737724,
+    "group_id": 26737733
+  },
+  "teams": [
+    {
+      "name": "A.D. Arganda C.F.",
+      "pts": 27,
+      "pj": 9,
+      "pg": 9,
+      "pe": 0,
+      "pp": 0,
+      "gf": 53,
+      "gc": 8,
+      "pos": 1
+    },
+    {
+      "name": "A.D. La Meca de Rivas A",
+      "pts": 21,
+      "pj": 9,
+      "pg": 7,
+      "pe": 0,
+      "pp": 2,
+      "gf": 34,
+      "gc": 20,
+      "pos": 2
+    },
+    {
+      "name": "Periso C.F. C",
+      "pts": 20,
+      "pj": 9,
+      "pg": 6,
+      "pe": 2,
+      "pp": 1,
+      "gf": 36,
+      "gc": 7,
+      "pos": 3
+    },
+    {
+      "name": "U.D. Velilla",
+      "pts": 20,
+      "pj": 9,
+      "pg": 6,
+      "pe": 2,
+      "pp": 1,
+      "gf": 42,
+      "gc": 14,
+      "pos": 4
+    },
+    {
+      "name": "Águilas de Moratalaz A",
+      "pts": 19,
+      "pj": 9,
+      "pg": 6,
+      "pe": 1,
+      "pp": 2,
+      "gf": 35,
+      "gc": 15,
+      "pos": 5
+    },
+    {
+      "name": "C.D. Mejoreño A",
+      "pts": 16,
+      "pj": 9,
+      "pg": 5,
+      "pe": 1,
+      "pp": 3,
+      "gf": 31,
+      "gc": 15,
+      "pos": 6
+    },
+    {
+      "name": "U.D. Loeches A",
+      "pts": 15,
+      "pj": 9,
+      "pg": 5,
+      "pe": 0,
+      "pp": 4,
+      "gf": 39,
+      "gc": 32,
+      "pos": 7
+    },
+    {
+      "name": "Parque Sureste B",
+      "pts": 14,
+      "pj": 9,
+      "pg": 4,
+      "pe": 2,
+      "pp": 3,
+      "gf": 30,
+      "gc": 17,
+      "pos": 8
+    },
+    {
+      "name": "Rivas Fútbol Club C",
+      "pts": 14,
+      "pj": 9,
+      "pg": 4,
+      "pe": 2,
+      "pp": 3,
+      "gf": 27,
+      "gc": 16,
+      "pos": 9
+    },
+    {
+      "name": "E.F. Arganda C",
+      "pts": 14,
+      "pj": 9,
+      "pg": 4,
+      "pe": 2,
+      "pp": 3,
+      "gf": 23,
+      "gc": 24,
+      "pos": 10
+    },
+    {
+      "name": "C.D. Vicálvaro D",
+      "pts": 13,
+      "pj": 9,
+      "pg": 4,
+      "pe": 1,
+      "pp": 4,
+      "gf": 27,
+      "gc": 25,
+      "pos": 11
+    },
+    {
+      "name": "U.D. Valdebernardo C",
+      "pts": 11,
+      "pj": 9,
+      "pg": 3,
+      "pe": 2,
+      "pp": 4,
+      "gf": 24,
+      "gc": 29,
+      "pos": 12
+    },
+    {
+      "name": "Santa María del Pilar B",
+      "pts": 9,
+      "pj": 9,
+      "pg": 3,
+      "pe": 0,
+      "pp": 6,
+      "gf": 15,
+      "gc": 33,
+      "pos": 13
+    },
+    {
+      "name": "Escuela F. Rivas B",
+      "pts": 6,
+      "pj": 9,
+      "pg": 1,
+      "pe": 3,
+      "pp": 5,
+      "gf": 20,
+      "gc": 27,
+      "pos": 14
+    },
+    {
+      "name": "U.D. La Poveda",
+      "pts": 6,
+      "pj": 9,
+      "pg": 2,
+      "pe": 0,
+      "pp": 7,
+      "gf": 15,
+      "gc": 49,
+      "pos": 15
+    },
+    {
+      "name": "E.D. Moratalaz E",
+      "pts": 5,
+      "pj": 9,
+      "pg": 1,
+      "pe": 2,
+      "pp": 6,
+      "gf": 16,
+      "gc": 25,
+      "pos": 16
+    },
+    {
+      "name": "Adepo Palomeras B",
+      "pts": 2,
+      "pj": 9,
+      "pg": 0,
+      "pe": 2,
+      "pp": 7,
+      "gf": 14,
+      "gc": 43,
+      "pos": 17
+    },
+    {
+      "name": "CDE Valmes C.F.",
+      "pts": 0,
+      "pj": 9,
+      "pg": 0,
+      "pe": 0,
+      "pp": 9,
+      "gf": 4,
+      "gc": 86,
+      "pos": 18
+    }
+  ],
+  "fixtures": [
+    {
+      "j": 1,
+      "date": "2026-09-13",
+      "rival": "Periso C.F. C",
+      "home": false,
+      "gf": 0,
+      "gc": 1,
+      "time": null
+    },
+    {
+      "j": 2,
+      "date": "2026-09-20",
+      "rival": "C.D. Vicálvaro D",
+      "home": true,
+      "gf": 8,
+      "gc": 0,
+      "time": null
+    },
+    {
+      "j": 3,
+      "date": "2026-10-21",
+      "rival": "E.D. Moratalaz E",
+      "home": false,
+      "gf": 2,
+      "gc": 1,
+      "time": null
+    },
+    {
+      "j": 4,
+      "date": "2026-10-04",
+      "rival": "CDE Valmes C.F.",
+      "home": true,
+      "gf": 5,
+      "gc": 0,
+      "time": null
+    },
+    {
+      "j": 5,
+      "date": "2026-10-11",
+      "rival": "A.D. La Meca de Rivas A",
+      "home": false,
+      "gf": 2,
+      "gc": 4,
+      "time": null
+    },
+    {
+      "j": 6,
+      "date": "2026-10-18",
+      "rival": "Adepo Palomeras B",
+      "home": true,
+      "gf": 3,
+      "gc": 3,
+      "time": null
+    },
+    {
+      "j": 7,
+      "date": "2026-10-24",
+      "rival": "A.D. Arganda C.F.",
+      "home": false,
+      "gf": 2,
+      "gc": 4,
+      "time": null
+    },
+    {
+      "j": 8,
+      "date": "2026-10-31",
+      "rival": "C.D. Mejoreño A",
+      "home": true,
+      "gf": 1,
+      "gc": 1,
+      "time": null
+    },
+    {
+      "j": 9,
+      "date": "2026-11-07",
+      "rival": "U.D. Loeches A",
+      "home": false,
+      "gf": 4,
+      "gc": 2,
+      "time": null
+    },
+    {
+      "j": 10,
+      "date": "2026-11-14",
+      "rival": "Escuela F. Rivas B",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": "17:00"
+    },
+    {
+      "j": 11,
+      "date": "2026-11-22",
+      "rival": "Águilas de Moratalaz A",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": "10:00"
+    },
+    {
+      "j": 12,
+      "date": "2026-11-29",
+      "rival": "U.D. La Poveda",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 13,
+      "date": "2026-12-13",
+      "rival": "U.D. Velilla",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 14,
+      "date": "2026-12-20",
+      "rival": "Parque Sureste B",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 15,
+      "date": "2027-01-17",
+      "rival": "U.D. Valdebernardo C",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 16,
+      "date": "2027-01-24",
+      "rival": "E.F. Arganda C",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 17,
+      "date": "2027-01-31",
+      "rival": "Santa María del Pilar B",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 18,
+      "date": "2027-02-07",
+      "rival": "Periso C.F. C",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 19,
+      "date": "2027-02-14",
+      "rival": "C.D. Vicálvaro D",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 20,
+      "date": "2027-02-21",
+      "rival": "E.D. Moratalaz E",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 21,
+      "date": "2027-02-28",
+      "rival": "CDE Valmes C.F.",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 22,
+      "date": "2027-03-07",
+      "rival": "A.D. La Meca de Rivas A",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 23,
+      "date": "2027-03-14",
+      "rival": "Adepo Palomeras B",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 24,
+      "date": "2027-03-21",
+      "rival": "A.D. Arganda C.F.",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 25,
+      "date": "2027-04-04",
+      "rival": "C.D. Mejoreño A",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 26,
+      "date": "2027-04-11",
+      "rival": "U.D. Loeches A",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 27,
+      "date": "2027-04-18",
+      "rival": "Escuela F. Rivas B",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 28,
+      "date": "2027-04-25",
+      "rival": "Águilas de Moratalaz A",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 29,
+      "date": "2027-05-02",
+      "rival": "U.D. La Poveda",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 30,
+      "date": "2027-05-09",
+      "rival": "U.D. Velilla",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 31,
+      "date": "2027-05-16",
+      "rival": "Parque Sureste B",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 32,
+      "date": "2027-05-23",
+      "rival": "U.D. Valdebernardo C",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 33,
+      "date": "2027-05-30",
+      "rival": "E.F. Arganda C",
+      "home": true,
+      "gf": null,
+      "gc": null,
+      "time": null
+    },
+    {
+      "j": 34,
+      "date": "2027-06-06",
+      "rival": "Santa María del Pilar B",
+      "home": false,
+      "gf": null,
+      "gc": null,
+      "time": "11:15"
+    }
+  ],
+  "featured_rival": "Águilas de Moratalaz A",
+  "sources": [
+    {
+      "name": "RFFM · clasificación",
+      "url": "https://www.rffm.es/competicion/clasificaciones?competicion=26737724&grupo=26737733&temporada=22&tipojuego=1",
+      "role": "Fuente oficial"
+    },
+    {
+      "name": "RFFM · calendario",
+      "url": "https://www.rffm.es/competicion/calendario?competicion=26737724&grupo=26737733&temporada=22&tipojuego=1",
+      "role": "Fuente oficial"
+    },
+    {
+      "name": "RFFM · goleadores",
+      "url": "https://www.rffm.es/competicion/goleadores?competicion=26737724&grupo=26737733&temporada=22&tipojuego=1",
+      "role": "Fuente oficial"
+    },
+    {
+      "name": "El Balón de Madrid · Rivas C",
+      "url": "https://www.elbalondemadrid.es/equipo/6792823/partidos",
+      "role": "Contraste de partidos y horas"
+    },
+    {
+      "name": "Fútbol11Stats · J9",
+      "url": "https://www.futbol11stats.com/madrid/juveniles/primera/grupo-9/2026-27/jornada-9/clasificacion",
+      "role": "Fotografía de clasificación J9"
+    }
+  ],
+  "sync_mode": "historical_snapshot",
+  "snapshot_note": "Fotografía previa a la automatización; el resultado de la J10 no se ha podido comprobar."
+}
