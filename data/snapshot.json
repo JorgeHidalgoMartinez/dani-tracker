@@ -1,11 +1,11 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
-  "as_of": "2026-11-07",
-  "checked_at": "2026-11-15T22:56:52+00:00",
-  "data_through_jornada": 9,
+  "as_of": "2026-11-14",
+  "checked_at": "2026-11-16T16:00:41+00:00",
+  "data_through_jornada": 10,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
-  "consistency_note": "La tabla indica 10 partidos jugados, pero el calendario ofrece 9 marcadores. Se muestran por separado, sin completar el dato ausente.",
+  "consistency_note": "",
   "official": {
     "season_id": 22,
     "game_type_id": 1,
@@ -338,8 +338,8 @@
       "rival": "ESCUELA DE FUTBOL. RIVAS VACIAMADRID 'B'",
       "rival_id": "12234905",
       "home": true,
-      "gf": null,
-      "gc": null,
+      "gf": 3,
+      "gc": 2,
       "venue": "RIVAS - POLÍGONO SANTA ANA (HA)(HA)"
     },
     {
@@ -1588,8 +1588,8 @@
       "away": "ADEPO PALOMERAS 'B'",
       "home_id": "1031208",
       "away_id": "1687",
-      "hg": null,
-      "ag": null,
+      "hg": 7,
+      "ag": 0,
       "venue": "RIVAS - CASA GRANDE (HA)(HA)"
     },
     {
@@ -1600,8 +1600,8 @@
       "away": "A.D. LA MECA DE RIVAS 'A'",
       "home_id": "10650188",
       "away_id": "2524",
-      "hg": null,
-      "ag": null,
+      "hg": 0,
+      "ag": 4,
       "venue": "PVO. VALDEBERNARDO (HA)(HA)"
     },
     {
@@ -1612,8 +1612,8 @@
       "away": "C.D. VICALVARO 'D'",
       "home_id": "1176",
       "away_id": "15269398",
-      "hg": null,
-      "ag": null,
+      "hg": 3,
+      "ag": 3,
       "venue": "VICALVARADA (HA)(HA)"
     },
     {
@@ -1624,8 +1624,8 @@
       "away": "E.D. MORATALAZ 'E'",
       "home_id": "1709",
       "away_id": "3365053",
-      "hg": null,
-      "ag": null,
+      "hg": 4,
+      "ag": 2,
       "venue": "COLEGIO SANTA MARIA DEL PILAR (HA)(HA)"
     },
     {
@@ -1636,8 +1636,8 @@
       "away": "A.D. ARGANDA C.F.",
       "home_id": "17202265",
       "away_id": "4920197",
-      "hg": null,
-      "ag": null,
+      "hg": 0,
+      "ag": 2,
       "venue": "VELILLA DE SAN ANTONIO - PVO. MUNICIPAL (HA)(HA)"
     },
     {
@@ -1648,8 +1648,8 @@
       "away": "CDE VALMES C.F.",
       "home_id": "24016264",
       "away_id": "13571010",
-      "hg": null,
-      "ag": null,
+      "hg": 7,
+      "ag": 1,
       "venue": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)(HA)"
     },
     {
@@ -1660,8 +1660,8 @@
       "away": "C.D. MEJOREÑO 'A'",
       "home_id": "300189",
       "away_id": "304321",
-      "hg": null,
-      "ag": null,
+      "hg": 1,
+      "ag": 4,
       "venue": "ARGANDA - LA POVEDA (HA)(HA)"
     },
     {
@@ -1672,8 +1672,8 @@
       "away": "CLUB UNION DEPORTIVA LOECHES 'A'",
       "home_id": "348221",
       "away_id": "300188",
-      "hg": null,
-      "ag": null,
+      "hg": 5,
+      "ag": 2,
       "venue": "PVO. MORATALAZ (HA)(HA)"
     },
     {
@@ -1684,14 +1684,14 @@
       "away": "ESCUELA DE FUTBOL. RIVAS VACIAMADRID 'B'",
       "home_id": "6792823",
       "away_id": "12234905",
-      "hg": null,
-      "ag": null,
+      "hg": 3,
+      "ag": 2,
       "venue": "RIVAS - POLÍGONO SANTA ANA (HA)(HA)"
     },
     {
       "j": 11,
       "date": "2026-11-22",
-      "time": null,
+      "time": "16:00",
       "home": "ESCUELA DE FUTBOL. RIVAS VACIAMADRID 'B'",
       "away": "C.D. VICALVARO 'D'",
       "home_id": "12234905",
@@ -1703,7 +1703,7 @@
     {
       "j": 11,
       "date": "2026-11-22",
-      "time": null,
+      "time": "12:30",
       "home": "CDE VALMES C.F.",
       "away": "C.P. SANTA MARIA DEL PILAR 'B'",
       "home_id": "13571010",
@@ -1738,8 +1738,8 @@
     },
     {
       "j": 11,
-      "date": "2026-11-22",
-      "time": null,
+      "date": "2026-11-21",
+      "time": "17:00",
       "home": "CLUB UNION DEPORTIVA LOECHES 'A'",
       "away": "UNION DEPORTIVA LA POVEDA",
       "home_id": "300188",
@@ -1751,7 +1751,7 @@
     {
       "j": 11,
       "date": "2026-11-22",
-      "time": null,
+      "time": "16:00",
       "home": "C.D. MEJOREÑO 'A'",
       "away": "U.D. VELILLA",
       "home_id": "304321",
@@ -1774,8 +1774,8 @@
     },
     {
       "j": 11,
-      "date": "2026-11-22",
-      "time": null,
+      "date": "2026-11-21",
+      "time": "18:00",
       "home": "A.D. ARGANDA C.F.",
       "away": "S.A.D. A.D.C. PARQUE SURESTE 'B'",
       "home_id": "4920197",
