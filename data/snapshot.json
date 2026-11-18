@@ -1,7 +1,7 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
   "as_of": "2026-11-14",
-  "checked_at": "2026-11-18T01:00:44+00:00",
+  "checked_at": "2026-11-18T15:48:48+00:00",
   "data_through_jornada": 10,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
@@ -1846,8 +1846,8 @@
     },
     {
       "j": 12,
-      "date": "2026-11-29",
-      "time": "13:30",
+      "date": "2026-11-25",
+      "time": "19:30",
       "home": "C.P. SANTA MARIA DEL PILAR 'B'",
       "away": "A.D. LA MECA DE RIVAS 'A'",
       "home_id": "1709",
