@@ -1,7 +1,7 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
   "as_of": "2026-11-14",
-  "checked_at": "2026-11-21T14:47:04+00:00",
+  "checked_at": "2026-11-21T23:27:14+00:00",
   "data_through_jornada": 10,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
@@ -19,12 +19,12 @@
       "name": "A.D. ARGANDA C.F.",
       "pos": 1,
       "pts": 30,
-      "pj": 10,
+      "pj": 11,
       "pg": 10,
       "pe": 0,
-      "pp": 0,
-      "gf": 55,
-      "gc": 8
+      "pp": 1,
+      "gf": 57,
+      "gc": 11
     },
     {
       "id": "2524",
@@ -75,9 +75,21 @@
       "gc": 16
     },
     {
+      "id": "1031208",
+      "name": "S.A.D. A.D.C. PARQUE SURESTE 'B'",
+      "pos": 6,
+      "pts": 20,
+      "pj": 11,
+      "pg": 6,
+      "pe": 2,
+      "pp": 3,
+      "gf": 40,
+      "gc": 19
+    },
+    {
       "id": "304321",
       "name": "C.D. MEJOREÑO 'A'",
-      "pos": 6,
+      "pos": 7,
       "pts": 19,
       "pj": 10,
       "pg": 6,
@@ -87,21 +99,21 @@
       "gc": 16
     },
     {
-      "id": "1031208",
-      "name": "S.A.D. A.D.C. PARQUE SURESTE 'B'",
-      "pos": 7,
-      "pts": 17,
-      "pj": 10,
-      "pg": 5,
-      "pe": 2,
-      "pp": 3,
-      "gf": 37,
-      "gc": 17
+      "id": "300188",
+      "name": "CLUB UNION DEPORTIVA LOECHES 'A'",
+      "pos": 8,
+      "pts": 18,
+      "pj": 11,
+      "pg": 6,
+      "pe": 0,
+      "pp": 5,
+      "gf": 49,
+      "gc": 37
     },
     {
       "id": "6792823",
       "name": "RIVAS FUTBOL CLUB 'C'",
-      "pos": 8,
+      "pos": 9,
       "pts": 17,
       "pj": 10,
       "pg": 5,
@@ -113,7 +125,7 @@
     {
       "id": "24016264",
       "name": "ESCUELA DE FUTBOL ARGANDA 'C'",
-      "pos": 9,
+      "pos": 10,
       "pts": 17,
       "pj": 10,
       "pg": 5,
@@ -121,18 +133,6 @@
       "pp": 3,
       "gf": 30,
       "gc": 25
-    },
-    {
-      "id": "300188",
-      "name": "CLUB UNION DEPORTIVA LOECHES 'A'",
-      "pos": 10,
-      "pts": 15,
-      "pj": 10,
-      "pg": 5,
-      "pe": 0,
-      "pp": 5,
-      "gf": 41,
-      "gc": 37
     },
     {
       "id": "15269398",
@@ -187,12 +187,12 @@
       "name": "UNION DEPORTIVA LA POVEDA",
       "pos": 15,
       "pts": 6,
-      "pj": 10,
+      "pj": 11,
       "pg": 2,
       "pe": 0,
-      "pp": 8,
+      "pp": 9,
       "gf": 16,
-      "gc": 53
+      "gc": 61
     },
     {
       "id": "3365053",
