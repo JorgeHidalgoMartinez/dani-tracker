@@ -1,7 +1,7 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
   "as_of": "2026-11-14",
-  "checked_at": "2026-11-22T14:42:42+00:00",
+  "checked_at": "2026-11-22T23:39:47+00:00",
   "data_through_jornada": 10,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
@@ -27,21 +27,33 @@
       "gc": 11
     },
     {
-      "id": "2524",
-      "name": "A.D. LA MECA DE RIVAS 'A'",
+      "id": "1176",
+      "name": "PERISO CLUB DE FUTBOL 'C'",
       "pos": 2,
       "pts": 24,
-      "pj": 10,
+      "pj": 11,
+      "pg": 7,
+      "pe": 3,
+      "pp": 1,
+      "gf": 41,
+      "gc": 10
+    },
+    {
+      "id": "2524",
+      "name": "A.D. LA MECA DE RIVAS 'A'",
+      "pos": 3,
+      "pts": 24,
+      "pj": 11,
       "pg": 8,
       "pe": 0,
-      "pp": 2,
-      "gf": 38,
-      "gc": 20
+      "pp": 3,
+      "gf": 40,
+      "gc": 23
     },
     {
       "id": "348221",
       "name": "ESC. MPAL. DE FUT. AGUILAS DE MORATALAZ 'A'",
-      "pos": 3,
+      "pos": 4,
       "pts": 22,
       "pj": 11,
       "pg": 7,
@@ -51,33 +63,33 @@
       "gc": 21
     },
     {
-      "id": "1176",
-      "name": "PERISO CLUB DE FUTBOL 'C'",
-      "pos": 4,
-      "pts": 21,
-      "pj": 10,
-      "pg": 6,
-      "pe": 3,
-      "pp": 1,
-      "gf": 39,
-      "gc": 10
+      "id": "304321",
+      "name": "C.D. MEJOREÑO 'A'",
+      "pos": 5,
+      "pts": 22,
+      "pj": 11,
+      "pg": 7,
+      "pe": 1,
+      "pp": 3,
+      "gf": 36,
+      "gc": 16
     },
     {
       "id": "17202265",
       "name": "U.D. VELILLA",
-      "pos": 5,
+      "pos": 6,
       "pts": 20,
-      "pj": 10,
+      "pj": 11,
       "pg": 6,
       "pe": 2,
-      "pp": 2,
+      "pp": 3,
       "gf": 42,
-      "gc": 16
+      "gc": 17
     },
     {
       "id": "1031208",
       "name": "S.A.D. A.D.C. PARQUE SURESTE 'B'",
-      "pos": 6,
+      "pos": 7,
       "pts": 20,
       "pj": 11,
       "pg": 6,
@@ -89,7 +101,7 @@
     {
       "id": "6792823",
       "name": "RIVAS FUTBOL CLUB 'C'",
-      "pos": 7,
+      "pos": 8,
       "pts": 20,
       "pj": 11,
       "pg": 6,
@@ -99,21 +111,21 @@
       "gc": 20
     },
     {
-      "id": "304321",
-      "name": "C.D. MEJOREÑO 'A'",
-      "pos": 8,
-      "pts": 19,
-      "pj": 10,
+      "id": "24016264",
+      "name": "ESCUELA DE FUTBOL ARGANDA 'C'",
+      "pos": 9,
+      "pts": 20,
+      "pj": 11,
       "pg": 6,
-      "pe": 1,
+      "pe": 2,
       "pp": 3,
-      "gf": 35,
-      "gc": 16
+      "gf": 33,
+      "gc": 27
     },
     {
       "id": "300188",
       "name": "CLUB UNION DEPORTIVA LOECHES 'A'",
-      "pos": 9,
+      "pos": 10,
       "pts": 18,
       "pj": 11,
       "pg": 6,
@@ -123,21 +135,21 @@
       "gc": 37
     },
     {
-      "id": "24016264",
-      "name": "ESCUELA DE FUTBOL ARGANDA 'C'",
-      "pos": 10,
+      "id": "15269398",
+      "name": "C.D. VICALVARO 'D'",
+      "pos": 11,
       "pts": 17,
-      "pj": 10,
+      "pj": 11,
       "pg": 5,
       "pe": 2,
-      "pp": 3,
-      "gf": 30,
-      "gc": 25
+      "pp": 4,
+      "gf": 33,
+      "gc": 30
     },
     {
       "id": "1709",
       "name": "C.P. SANTA MARIA DEL PILAR 'B'",
-      "pos": 11,
+      "pos": 12,
       "pts": 15,
       "pj": 11,
       "pg": 5,
@@ -147,40 +159,28 @@
       "gc": 36
     },
     {
-      "id": "15269398",
-      "name": "C.D. VICALVARO 'D'",
-      "pos": 12,
-      "pts": 14,
-      "pj": 10,
-      "pg": 4,
-      "pe": 2,
-      "pp": 4,
-      "gf": 30,
-      "gc": 28
-    },
-    {
       "id": "10650188",
       "name": "C.D. UNION VALDEBERNARDO 'C'",
       "pos": 13,
-      "pts": 11,
-      "pj": 10,
+      "pts": 12,
+      "pj": 11,
       "pg": 3,
-      "pe": 2,
+      "pe": 3,
       "pp": 5,
-      "gf": 24,
-      "gc": 33
+      "gf": 26,
+      "gc": 35
     },
     {
       "id": "12234905",
       "name": "ESCUELA DE FUTBOL. RIVAS VACIAMADRID 'B'",
       "pos": 14,
       "pts": 6,
-      "pj": 10,
+      "pj": 11,
       "pg": 1,
       "pe": 3,
-      "pp": 6,
-      "gf": 22,
-      "gc": 30
+      "pp": 7,
+      "gf": 24,
+      "gc": 33
     },
     {
       "id": "300189",
@@ -199,24 +199,24 @@
       "name": "E.D. MORATALAZ 'E'",
       "pos": 16,
       "pts": 5,
-      "pj": 10,
+      "pj": 11,
       "pg": 1,
       "pe": 2,
-      "pp": 7,
+      "pp": 8,
       "gf": 18,
-      "gc": 29
+      "gc": 31
     },
     {
       "id": "1687",
       "name": "ADEPO PALOMERAS 'B'",
       "pos": 17,
-      "pts": 2,
-      "pj": 10,
+      "pts": 3,
+      "pj": 11,
       "pg": 0,
-      "pe": 2,
+      "pe": 3,
       "pp": 8,
-      "gf": 14,
-      "gc": 50
+      "gf": 16,
+      "gc": 52
     },
     {
       "id": "13571010",
