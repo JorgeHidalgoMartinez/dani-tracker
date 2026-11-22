@@ -1,11 +1,11 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
   "as_of": "2026-11-14",
-  "checked_at": "2026-11-21T23:27:14+00:00",
+  "checked_at": "2026-11-22T14:42:42+00:00",
   "data_through_jornada": 10,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
-  "consistency_note": "",
+  "consistency_note": "La tabla indica 11 partidos jugados, pero el calendario ofrece 10 marcadores. Se muestran por separado, sin completar el dato ausente.",
   "official": {
     "season_id": 22,
     "game_type_id": 1,
@@ -43,12 +43,12 @@
       "name": "ESC. MPAL. DE FUT. AGUILAS DE MORATALAZ 'A'",
       "pos": 3,
       "pts": 22,
-      "pj": 10,
+      "pj": 11,
       "pg": 7,
       "pe": 1,
-      "pp": 2,
-      "gf": 40,
-      "gc": 17
+      "pp": 3,
+      "gf": 42,
+      "gc": 21
     },
     {
       "id": "1176",
@@ -87,9 +87,21 @@
       "gc": 19
     },
     {
+      "id": "6792823",
+      "name": "RIVAS FUTBOL CLUB 'C'",
+      "pos": 7,
+      "pts": 20,
+      "pj": 11,
+      "pg": 6,
+      "pe": 2,
+      "pp": 3,
+      "gf": 34,
+      "gc": 20
+    },
+    {
       "id": "304321",
       "name": "C.D. MEJOREÑO 'A'",
-      "pos": 7,
+      "pos": 8,
       "pts": 19,
       "pj": 10,
       "pg": 6,
@@ -101,7 +113,7 @@
     {
       "id": "300188",
       "name": "CLUB UNION DEPORTIVA LOECHES 'A'",
-      "pos": 8,
+      "pos": 9,
       "pts": 18,
       "pj": 11,
       "pg": 6,
@@ -109,18 +121,6 @@
       "pp": 5,
       "gf": 49,
       "gc": 37
-    },
-    {
-      "id": "6792823",
-      "name": "RIVAS FUTBOL CLUB 'C'",
-      "pos": 9,
-      "pts": 17,
-      "pj": 10,
-      "pg": 5,
-      "pe": 2,
-      "pp": 3,
-      "gf": 30,
-      "gc": 18
     },
     {
       "id": "24016264",
@@ -135,9 +135,21 @@
       "gc": 25
     },
     {
+      "id": "1709",
+      "name": "C.P. SANTA MARIA DEL PILAR 'B'",
+      "pos": 11,
+      "pts": 15,
+      "pj": 11,
+      "pg": 5,
+      "pe": 0,
+      "pp": 6,
+      "gf": 26,
+      "gc": 36
+    },
+    {
       "id": "15269398",
       "name": "C.D. VICALVARO 'D'",
-      "pos": 11,
+      "pos": 12,
       "pts": 14,
       "pj": 10,
       "pg": 4,
@@ -145,18 +157,6 @@
       "pp": 4,
       "gf": 30,
       "gc": 28
-    },
-    {
-      "id": "1709",
-      "name": "C.P. SANTA MARIA DEL PILAR 'B'",
-      "pos": 12,
-      "pts": 12,
-      "pj": 10,
-      "pg": 4,
-      "pe": 0,
-      "pp": 6,
-      "gf": 19,
-      "gc": 35
     },
     {
       "id": "10650188",
@@ -223,12 +223,12 @@
       "name": "CDE VALMES C.F.",
       "pos": 18,
       "pts": 0,
-      "pj": 10,
+      "pj": 11,
       "pg": 0,
       "pe": 0,
-      "pp": 10,
-      "gf": 5,
-      "gc": 93
+      "pp": 11,
+      "gf": 6,
+      "gc": 100
     }
   ],
   "fixtures": [
