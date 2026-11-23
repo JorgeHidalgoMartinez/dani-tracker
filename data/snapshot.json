@@ -1,11 +1,11 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
-  "as_of": "2026-11-14",
-  "checked_at": "2026-11-22T23:39:47+00:00",
-  "data_through_jornada": 10,
+  "as_of": "2026-11-22",
+  "checked_at": "2026-11-23T18:25:39+00:00",
+  "data_through_jornada": 11,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
-  "consistency_note": "La tabla indica 11 partidos jugados, pero el calendario ofrece 10 marcadores. Se muestran por separado, sin completar el dato ausente.",
+  "consistency_note": "",
   "official": {
     "season_id": 22,
     "game_type_id": 1,
@@ -349,14 +349,14 @@
       "rival": "ESC. MPAL. DE FUT. AGUILAS DE MORATALAZ 'A'",
       "rival_id": "348221",
       "home": true,
-      "gf": null,
-      "gc": null,
+      "gf": 4,
+      "gc": 2,
       "venue": "RIVAS - POLÍGONO SANTA ANA (HA)(HA)"
     },
     {
       "j": 12,
       "date": "2026-11-29",
-      "time": null,
+      "time": "12:00",
       "rival": "UNION DEPORTIVA LA POVEDA",
       "rival_id": "300189",
       "home": false,
@@ -1696,8 +1696,8 @@
       "away": "C.D. VICALVARO 'D'",
       "home_id": "12234905",
       "away_id": "15269398",
-      "hg": null,
-      "ag": null,
+      "hg": 2,
+      "ag": 3,
       "venue": "RIVAS - EL VIVERO (HA)(HA)"
     },
     {
@@ -1708,8 +1708,8 @@
       "away": "C.P. SANTA MARIA DEL PILAR 'B'",
       "home_id": "13571010",
       "away_id": "1709",
-      "hg": null,
-      "ag": null,
+      "hg": 1,
+      "ag": 7,
       "venue": "VALDILECHA (HA)(HA)"
     },
     {
@@ -1720,8 +1720,8 @@
       "away": "C.D. UNION VALDEBERNARDO 'C'",
       "home_id": "1687",
       "away_id": "10650188",
-      "hg": null,
-      "ag": null,
+      "hg": 2,
+      "ag": 2,
       "venue": "PVO. PALOMERAS (HA)(HA)"
     },
     {
@@ -1732,8 +1732,8 @@
       "away": "ESCUELA DE FUTBOL ARGANDA 'C'",
       "home_id": "2524",
       "away_id": "24016264",
-      "hg": null,
-      "ag": null,
+      "hg": 2,
+      "ag": 3,
       "venue": "RIVAS - CERRO TELÉGRAFO (HA)(HA)"
     },
     {
@@ -1744,8 +1744,8 @@
       "away": "UNION DEPORTIVA LA POVEDA",
       "home_id": "300188",
       "away_id": "300189",
-      "hg": null,
-      "ag": null,
+      "hg": 8,
+      "ag": 0,
       "venue": "LOECHES (HA)(HA)"
     },
     {
@@ -1756,8 +1756,8 @@
       "away": "U.D. VELILLA",
       "home_id": "304321",
       "away_id": "17202265",
-      "hg": null,
-      "ag": null,
+      "hg": 1,
+      "ag": 0,
       "venue": "MEJORADA - NUEVO ESTADIO (HA)(HA)"
     },
     {
@@ -1768,8 +1768,8 @@
       "away": "PERISO CLUB DE FUTBOL 'C'",
       "home_id": "3365053",
       "away_id": "1176",
-      "hg": null,
-      "ag": null,
+      "hg": 0,
+      "ag": 2,
       "venue": "COLEGIO ARAGON (HA)(HA)"
     },
     {
@@ -1780,8 +1780,8 @@
       "away": "S.A.D. A.D.C. PARQUE SURESTE 'B'",
       "home_id": "4920197",
       "away_id": "1031208",
-      "hg": null,
-      "ag": null,
+      "hg": 2,
+      "ag": 3,
       "venue": "ARGANDA - CIUDAD DPTVA. PRINCIPE FELIPE (HA)(HA)"
     },
     {
@@ -1792,8 +1792,8 @@
       "away": "ESC. MPAL. DE FUT. AGUILAS DE MORATALAZ 'A'",
       "home_id": "6792823",
       "away_id": "348221",
-      "hg": null,
-      "ag": null,
+      "hg": 4,
+      "ag": 2,
       "venue": "RIVAS - POLÍGONO SANTA ANA (HA)(HA)"
     },
     {
@@ -1822,8 +1822,8 @@
     },
     {
       "j": 12,
-      "date": "2026-11-29",
-      "time": null,
+      "date": "2026-11-28",
+      "time": "17:45",
       "home": "PERISO CLUB DE FUTBOL 'C'",
       "away": "CDE VALMES C.F.",
       "home_id": "1176",
@@ -1859,7 +1859,7 @@
     {
       "j": 12,
       "date": "2026-11-29",
-      "time": null,
+      "time": "12:30",
       "home": "U.D. VELILLA",
       "away": "CLUB UNION DEPORTIVA LOECHES 'A'",
       "home_id": "17202265",
@@ -1871,7 +1871,7 @@
     {
       "j": 12,
       "date": "2026-11-29",
-      "time": null,
+      "time": "16:00",
       "home": "ESCUELA DE FUTBOL ARGANDA 'C'",
       "away": "ADEPO PALOMERAS 'B'",
       "home_id": "24016264",
@@ -1883,7 +1883,7 @@
     {
       "j": 12,
       "date": "2026-11-29",
-      "time": null,
+      "time": "12:00",
       "home": "UNION DEPORTIVA LA POVEDA",
       "away": "RIVAS FUTBOL CLUB 'C'",
       "home_id": "300189",
