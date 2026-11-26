@@ -1,7 +1,7 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
   "as_of": "2026-11-22",
-  "checked_at": "2026-11-26T01:49:15+00:00",
+  "checked_at": "2026-11-26T17:03:22+00:00",
   "data_through_jornada": 11,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
@@ -43,12 +43,12 @@
       "name": "A.D. LA MECA DE RIVAS 'A'",
       "pos": 3,
       "pts": 24,
-      "pj": 11,
+      "pj": 12,
       "pg": 8,
       "pe": 0,
-      "pp": 3,
-      "gf": 40,
-      "gc": 23
+      "pp": 4,
+      "gf": 41,
+      "gc": 25
     },
     {
       "id": "348221",
@@ -135,9 +135,21 @@
       "gc": 37
     },
     {
+      "id": "1709",
+      "name": "C.P. SANTA MARIA DEL PILAR 'B'",
+      "pos": 11,
+      "pts": 18,
+      "pj": 12,
+      "pg": 6,
+      "pe": 0,
+      "pp": 6,
+      "gf": 28,
+      "gc": 37
+    },
+    {
       "id": "15269398",
       "name": "C.D. VICALVARO 'D'",
-      "pos": 11,
+      "pos": 12,
       "pts": 17,
       "pj": 11,
       "pg": 5,
@@ -145,18 +157,6 @@
       "pp": 4,
       "gf": 33,
       "gc": 30
-    },
-    {
-      "id": "1709",
-      "name": "C.P. SANTA MARIA DEL PILAR 'B'",
-      "pos": 12,
-      "pts": 15,
-      "pj": 11,
-      "pg": 5,
-      "pe": 0,
-      "pp": 6,
-      "gf": 26,
-      "gc": 36
     },
     {
       "id": "10650188",
@@ -1852,8 +1852,8 @@
       "away": "A.D. LA MECA DE RIVAS 'A'",
       "home_id": "1709",
       "away_id": "2524",
-      "hg": null,
-      "ag": null,
+      "hg": 2,
+      "ag": 1,
       "venue": "COLEGIO SANTA MARIA DEL PILAR (HA)(HA)"
     },
     {
@@ -1943,7 +1943,7 @@
     {
       "j": 13,
       "date": "2026-12-13",
-      "time": null,
+      "time": "13:45",
       "home": "A.D. LA MECA DE RIVAS 'A'",
       "away": "PERISO CLUB DE FUTBOL 'C'",
       "home_id": "2524",
