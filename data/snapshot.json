@@ -1,7 +1,7 @@
 {
   "scope": "Primera Juvenil Grupo 9 2026/27; Rivas Fútbol Club C",
   "as_of": "2026-11-22",
-  "checked_at": "2026-11-26T17:03:22+00:00",
+  "checked_at": "2026-11-27T01:47:25+00:00",
   "data_through_jornada": 11,
   "sync_mode": "rffm_calendar_and_standings",
   "status": "Datos agregados del calendario y clasificación de la RFFM; sin información individual automática.",
@@ -1943,7 +1943,7 @@
     {
       "j": 13,
       "date": "2026-12-13",
-      "time": "13:45",
+      "time": "09:15",
       "home": "A.D. LA MECA DE RIVAS 'A'",
       "away": "PERISO CLUB DE FUTBOL 'C'",
       "home_id": "2524",
